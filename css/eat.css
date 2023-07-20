@@ -1,0 +1,111 @@
+.homeeat {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*body*/
+.title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+}
+
+
+/* Style the tab */
+.tab {
+    padding: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    color: white;
+    font-weight: 600;
+    background-color: var(--main-color);
+    margin: 20px;
+    padding: 20px;
+    float: center;
+    border: none;
+    transition: 0.3s;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.tabcontent {
+    float: left;
+    margin: 50px 0 100px 0;
+    padding: 20px;
+}
+
+.tabcontent .container {
+    width: 100%;
+    display: grid;
+    margin: 10px 10px 10px 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "content content content"
+        "content content content";
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.tabcontent .container .item {
+    min-height: 50px;
+    padding: 10px;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.tabcontent .container .item .article {
+    width: 100%;
+    padding: 10px;
+}
+
+.tabcontent .container .item .article .imgeat {
+    width: 100%;
+    height: 70%;
+}
+
+.tabcontent .container .item .article .imgeat .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.tabcontent .container .item .article .place {
+    padding-top: 10px;
+}
+
+
+.tabcontent .container .item .article .place .h2 {
+    padding: 10px;
+    color: white;
+    list-style: none;
+
+}
